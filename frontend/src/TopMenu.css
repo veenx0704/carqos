@@ -1,0 +1,8 @@
+.Main-Menu-bar{
+    background-color: #C9CDD0;
+    display: flex;
+}
+
+.Company-Logo{
+flex:1;
+}
