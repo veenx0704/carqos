@@ -1,0 +1,118 @@
+/* Basic container */
+.resultsContainer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Prevent body from adding extra margin or padding */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main frame taking up full width and height */
+.mainFrame {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: white;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box; /* Ensure padding doesn't add extra space outside */
+    position: absolute; /* Position absolute to avoid layout issues */
+    left: 0; /* Align to the left edge of the viewport */
+    top: 0; /* Align to the top edge of the viewport */
+}
+
+.topMainFrame {
+    background-color: gray;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 60px;
+    border: 2px solid black; /* Add a black border */
+
+}
+.topFrame1 {
+    background-color: white;
+    width: 100vw;
+    height: 50%;
+    margin-top: -1px;
+    position: relative;
+    border: 2px solid black; /* Add a black border */
+}
+
+.leftSquare {
+    background-color: #E8E8E8;
+    width: 30vw;
+    height: 85%;
+    margin-top: 15px;
+    margin-left: 100px;
+    position: relative;
+}
+.vehicleTitle {
+    position: absolute; /* Position relative to .topFrame */
+    width: 20%;
+    height: 22px;
+    margin-left: 40px;
+    margin-top: -170px;
+    text-align: center;
+    font-weight: normal; /* Makes text bold */
+    font-size: x-large;
+    color: black;
+}
+.rightSquare {
+    background-color: #E5E1EA;
+    width: 50vw;
+    height: 85%;
+    margin-top: -188px;
+    margin-left: 500px;
+    position: relative;
+}
+
+.topFrame2 {
+    background-color: white;
+    width: 100vw;
+    height: 10%;
+    margin-top: 0px;
+    position: relative;
+    border: 2px solid black; /* Add a black border */
+
+}
+.problemHeader {
+    position: absolute; /* Position relative to .topFrame */
+    width: 10%;
+    height: 30px;
+    background-color: #708AB4;
+    border-radius: 30px; /* Rounded corners */
+    margin-left: 100px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: normal; /* Makes text bold */
+    font-size: x-large;
+    color: white;
+}
+
+.addYourQuoteHeader {
+    position: absolute; /* Position relative to .topFrame */
+    width: 20%;
+    height: 22px;
+    background-color: #9AB7E6;
+    margin-left: 260px;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: normal; /* Makes text bold */
+    font-size: medium;
+    color: white;
+}
+
+.resultInfoFrame {
+    background-color: white;
+    width: 100vw;
+    height: 65%;
+    margin-top: 0px;
+    border: 2px solid black; /* Add a black border */
+
+}
