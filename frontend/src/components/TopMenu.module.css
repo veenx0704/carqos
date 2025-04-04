@@ -1,8 +1,23 @@
 .Main-Menu-bar{
     background-color: #C9CDD0;
+    color: white;
     display: flex;
+    align-items: center; /*This is aligning the items in the center vertically*/
+    justify-content: space-between; /*This properly spaces out the logo and menu items*/
+    position: relative;
+    
 }
 
 .Company-Logo{
-flex:1;
+
+    transform: translateX(20px);
+}
+
+.Homepage-link{
+    display: flex;
+    flex-direction: row;
+    gap:150px;
+    position: absolute; /*By putting this, its making the menu items be placed near the company logo since the company logo has position:relative*/
+    transform: translateX(80%);
+
 }
