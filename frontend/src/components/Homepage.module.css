@@ -1,0 +1,17 @@
+.popular-search{
+    font-size:28px;
+    color:white; /*This is the font color*/
+    font-weight: bold; /*Makes the font bold*/
+    display: flex;
+    flex-direction: row;
+    background-color: #7FCBAE;
+    width:210px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(120px) translateY(120px);
+    
+    
+    
+    
+}
