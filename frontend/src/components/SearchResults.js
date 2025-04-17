@@ -55,11 +55,71 @@ const SearchResults = () => {
                             {/*Problem Header */}
                             <div className={styles.problemHeader}>AC Filter</div>
                             {/*Link for user to add their quote */}
-                            <div className={styles.addYourQuoteHeader}>Want to share your quotes? Add yours!</div>
+                            <div className={styles.addYourQuoteHeader}>
+                            Want to share your quotes? <span className={styles.underlined}>Add yours!</span>
+                            </div>
                             </div>
                     </div>
+
                     <div className={styles.resultInfoFrame}>
-                    <h4>ressult Info Frame</h4>
+                        <div className={styles.resultInfoRow}>
+                            <div className={styles.avgCost}>Avg Cost: </div>
+                            <div className={styles.avgCostText}>
+                                <span className={styles.underlined}>65 USD</span>
+                                </div>
+
+                                <div className={styles.areaZipcode}>
+                                Area Zip Code: <span className={styles.underlined}>90805</span>
+                                </div>
+                        </div>
+
+                        < div className={styles.resultsscrollRow}>
+                            <div className={styles.prices}>Prices </div>
+                            <div className={styles.store}>Store </div>
+                            <div className={styles.customerRatings}>Customer Ratings </div>
+                        </div>
+
+                        <div className={styles.columnContainer}>
+                                <div className={styles.column}>
+                                    <div>65</div>
+                                    <div>70</div>
+                                    <div>80</div>
+                                    <div>65</div>
+                                    <div>70</div>
+                                    <div>80</div>
+                                    <div>65</div>
+                                    <div>70</div>
+                                    <div>80</div>
+                                    </div>
+                                    <div className={styles.column}>
+                                    <div>AutoZone</div>
+                                    <div>Jiffy Lube</div>
+                                    <div>Meineke</div>
+                                    <div>AutoZone</div>
+                                    <div>Jiffy Lube</div>
+                                    <div>Meineke</div>
+                                    <div>AutoZone</div>
+                                    <div>Jiffy Lube</div>
+                                    <div>Meineke</div>
+                                    </div>
+                                    <div className={styles.column}>
+                                    <div>4.5</div>
+                                    <div>4.1</div>
+                                    <div>3.9</div>
+                                    <div>4.5</div>
+                                    <div>4.1</div>
+                                    <div>3.9</div>
+                                    <div>4.5</div>
+                                    <div>4.1</div>
+                                    <div>3.9</div>
+                                    </div>
+
+
+                        </div>
+                    </div>
+                    < div className={styles.mapContainer}>
+                    <h1>Map Container</h1>
+
                     </div>
                 </div>
             </div>
