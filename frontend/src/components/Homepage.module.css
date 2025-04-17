@@ -1,3 +1,13 @@
+/*This is for the text to be underlined*/
+
+.underlined{
+    display: inline-block;
+    border-bottom:1px solid #794EEF;
+    padding-bottom:2px;
+    
+}
+
+
 .popular-search{
     font-size:33px;
     color:white; /*This is the font color*/
@@ -19,7 +29,7 @@
 
 
 .popular-search-details{
-    background-color:blueviolet ;
+    /*background-color:blueviolet ;*/
     width: 1600px;
     height:400px;
     display: grid;
@@ -37,7 +47,7 @@
 .popular-search-1,.popular-search-2,.popular-search-3,.popular-search-4,.popular-search-5,.popular-search-6{
     background-color:white;
     display: flex;
-    border:2px solid black; /*This is to add a border to the box*/
+    /*border:2px solid black; *//*This is to add a border to the box*/
     flex-direction: column;
     
 }
@@ -49,6 +59,7 @@
     font-weight: bold;
     font-size: 36px;
     font-family:Helvetica;
+    
 
     
     
@@ -58,19 +69,39 @@
 
 .popular-search-make-year{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,0.25fr);
     font-family:Helvetica;
     font-size: 12px;
+    color:white;
+    
 
 }
 
 .popular-search-make,.popular-search-year{
+    display: flex;
     background-color:#AFAFAF;
+    border:2px solid #7E7E7E ;
     border-radius:12px ;
     width:100px;
     height: 23px;
-    text-align: center;
+    flex-direction: row;
+    justify-content: center; /*Justify-content + align-items allows you to center horizontally and vertically*/
+    align-items: center;
+   
 }
+.popular-search-issue-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #794EEF;
+    transform: translateY(20px);
+    font-size: 14px;
+    font-family:Helvetica;
+    gap:5px;
+    
+}
+
+
 
 
 

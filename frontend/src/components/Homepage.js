@@ -38,9 +38,9 @@ return (
             </div>
 
             <div className={styles["popular-search-issue-list"]}>
-            Brake Pad
-            Battery
-            Transmission
+            <span className={styles.underlined}>Brake Pad</span>
+            <span className={styles.underlined}>Battery</span>
+            <span className={styles.underlined}>Transmission</span>
            
             </div>
 
@@ -61,7 +61,9 @@ return (
             </div>
 
             <div className={styles["popular-search-issue-list"]}>
-
+            <span className={styles.underlined}>Sway Bar</span> 
+            <span className={styles.underlined}>Exhaust System</span>
+            <span className={styles.underlined}>Suspension</span>
             </div>
           
         </div>
@@ -82,7 +84,9 @@ return (
             </div>
 
             <div className={styles["popular-search-issue-list"]}>
-
+            <span className={styles.underlined}>Oil Change</span>
+            <span className={styles.underlined}>Timing Belt</span>
+            <span className={styles.underlined}>Air Condition</span>
             </div>
           
         </div>
@@ -102,7 +106,9 @@ return (
             </div>
 
             <div className={styles["popular-search-issue-list"]}>
-
+            <span className={styles.underlined}>Brake Pad</span>
+            <span className={styles.underlined}>Battery</span>
+            <span className={styles.underlined}>Transmission</span>
             </div>
           
         </div>
@@ -124,7 +130,9 @@ return (
             </div>
 
             <div className={styles["popular-search-issue-list"]}>
-
+            <span className={styles.underlined}>Sway Bar</span>
+            <span className={styles.underlined}>Exhaust System</span>
+            <span className={styles.underlined}>Suspension</span>
             </div>
           
         </div>
@@ -146,7 +154,9 @@ return (
             </div>
 
             <div className={styles["popular-search-issue-list"]}>
-
+            <span className={styles.underlined}>Oil Change </span>
+            <span className={styles.underlined}>Timing Belt </span>
+            <span className={styles.underlined}>Air Condition</span>
             </div>
           
         </div>
