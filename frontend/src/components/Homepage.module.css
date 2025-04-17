@@ -1,17 +1,77 @@
 .popular-search{
-    font-size:28px;
+    font-size:33px;
     color:white; /*This is the font color*/
     font-weight: bold; /*Makes the font bold*/
+    font-family:Helvetica;
     display: flex;
     flex-direction: row;
     background-color: #7FCBAE;
-    width:210px;
-    height: 50px;
+    width:312px;
+    height: 57px;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(120px) translateY(120px);
+    transform: translateX(120px) translateY(70px);
     
     
     
     
 }
+
+
+.popular-search-details{
+    background-color:blueviolet ;
+    width: 1600px;
+    height:400px;
+    display: grid;
+    justify-self: center; /*This centered the box to be in the middle on the x-axis, so horizontally*/
+    transform: translateY(120px);/*This moved the box of the entire popular searches down by 120*/
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px;       /*Adds space between rows and columns*/
+    padding:20px;  /*This adds space around the entire grid*/
+
+    
+    
+}
+
+.popular-search-1,.popular-search-2,.popular-search-3,.popular-search-4,.popular-search-5,.popular-search-6{
+    background-color:white;
+    display: flex;
+    border:2px solid black; /*This is to add a border to the box*/
+    flex-direction: column;
+    
+}
+
+.popular-search-car-name{
+    display: flex;
+    flex-direction: row;
+    color:#4D4D4D;
+    font-weight: bold;
+    font-size: 36px;
+    font-family:Helvetica;
+
+    
+    
+    
+   
+}
+
+.popular-search-make-year{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family:Helvetica;
+    font-size: 12px;
+
+}
+
+.popular-search-make,.popular-search-year{
+    background-color:#AFAFAF;
+    border-radius:12px ;
+    width:100px;
+    height: 23px;
+    text-align: center;
+}
+
+
+
+
