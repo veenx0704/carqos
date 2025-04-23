@@ -363,25 +363,38 @@ body {
     margin-left: -50px;
   }
   .mapContainer {
+    position: relative;
+    top: -70%;          /* Adjust vertical placement */
+    left: 55%;         /* Controls horizontal placement */
+
+    width: 30%;
+    aspect-ratio: 4 / 3;  /* Keeps it proportional */
     background-color: #E8E8E8;
-    width: 35%;
-    height: 60%;
-    margin-top: -280px;
-    margin-left: 700px;
-    border-radius: 30px; /* Rounded corners */
-    font-size: small;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     color: white;
-    text-align: center;
-  }
+}
   .bottomFrame {
 
-    background-color: gray;
+    background-color: white;
     width: 100vw;
     height: 70vh;
     margin-top: 90px;
-    border: 2px solid black; /* Add a black border */
-
-
+    
   }
+
+  .commentsContainer{
+    background-color: #EDEDED;
+    width: 82vw;
+    height: 30vh;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+
+
   
   

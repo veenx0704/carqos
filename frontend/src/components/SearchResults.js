@@ -118,11 +118,15 @@ const SearchResults = () => {
                         </div>
                     </div>
                     < div className={styles.mapContainer}>
-                    <h1>Map Container</h1>
+                        <h1>Map Container</h1>
 
                     </div>
                 </div>
                 <div className={styles.bottomFrame}>
+                    <div className={styles.commentsContainer}>
+
+                        
+                    </div>
 
 
                 </div>
