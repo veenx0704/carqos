@@ -1,10 +1,12 @@
 .Main-Menu-bar{
     background-color: #C9CDD0;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     align-items: center; /*This is aligning the items in the center vertically*/
     justify-content: space-between; /*This properly spaces out the logo and menu items*/
     position: relative;
+    font-family: Helvetica;
     
 }
 
@@ -20,4 +22,31 @@
     position: absolute; /*By putting this, its making the menu items be placed near the company logo since the company logo has position:relative*/
     transform: translateX(80%);
 
+}
+
+.Menu-search-bar{
+    background-color: white;
+    width: 351px;
+    height:41px;
+    border-radius: 21px;
+    align-items: center;  /*this is aligning the text in the center vertically*/
+    justify-content: center; /*this is aligning the text in the center horizontally*/
+    color:rgb(0,0,0,.5);
+    display: flex;
+    transform: translateX(700px);
+
+
+}
+
+.Account-profile{
+    display: flex;
+    transform: translateX(750px);
+    gap: 20px;
+    align-items: center;
+
+}
+
+.Account-person{
+    width: 31.5px;
+    height: 31.5px;
 }
