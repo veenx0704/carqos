@@ -20,34 +20,29 @@
     height: 57px;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(120px) translateY(70px);
-    
-    
-    
+    transform: translateX(120px) translateY(40px);
     
 }
 
 
 .popular-search-details{
     /*background-color:blueviolet ;*/
-    width: 1600px;
-    height:400px;
+    width: 1400px;
+    height:150px;
     display: grid;
-    justify-self: center; /*This centered the box to be in the middle on the x-axis, so horizontally*/
-    transform: translateY(120px);/*This moved the box of the entire popular searches down by 120*/
+    justify-self: end; /*This centered the box to be in the middle on the x-axis, so horizontally*/
+    transform:translateX(50px) translateY(50px);/*This moved the box of the entire popular searches down by 120*/
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap:10px;       /*Adds space between rows and columns*/
     padding:20px;  /*This adds space around the entire grid*/
 
-    
-    
 }
 
 .popular-search-1,.popular-search-2,.popular-search-3,.popular-search-4,.popular-search-5,.popular-search-6{
     background-color:white;
     display: flex;
-    /*border:2px solid black; *//*This is to add a border to the box*/
+   /* border:2px solid black;*/ /*This is to add a border to the box*/
     flex-direction: column;
     
 }
@@ -58,12 +53,7 @@
     color:#4D4D4D;
     font-weight: bold;
     font-size: 36px;
-    font-family:Helvetica;
-    
-
-    
-    
-    
+    font-family:Helvetica;   
    
 }
 
@@ -94,15 +84,123 @@
     flex-direction: column;
     align-items: flex-start;
     color: #794EEF;
-    transform: translateY(20px);
+    transform: translateY(5px);
     font-size: 14px;
     font-family:Helvetica;
     gap:5px;
     
 }
 
+/*This is the additional search feature:*/
+
+.rightSquare {
+    background-color: #E5E1EA;
+    width: 700px;
+    height: 220px;
+
+    /*Adding flexbox */
+    display: flex;
+    flex-direction: column; /*stacks children up-down*/
+    justify-content: flex-start; /* Start from the top */
+    align-items: flex-start; /* Align to the left */
+    /*padding: 20px; /* Add some breathing room */
+    gap: 10px; /* Space between child elements */
+    transform: translateY(200px) translateX(125px);
+    
+}
+.selectCarText{
+    width: 20%;
+    height: 17px;
+    text-align: center;
+    font-weight: bold; /* Makes text bold */
+    font-size: large;
+    color: #4D4D4D;
+    margin-top: 25px;
+    font-family: Helvetica;
+}
+
+.carDetailsRow2 {
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Optional: makes them stretch evenly if needed */
+    margin-left: 20px;
+  }
+  .selectCarYear, .selectCarMake, .selectCarModel, .selectCarEngineSizeAndTrim {
+    width: 20%;
+    height: 20px;
+    background-color: white;
+    border-radius: 7px; /* Rounded corners */
+    text-align: center;
+    font-weight: normal; /* Makes text bold */
+    font-size: smaller;
+    color: #4D4D4D;
+    padding-top: 5px; 
+    font-family:Helvetica;
 
 
+}
+.repairmentsForText {
+    width: 50%;
+    height: 17px;
+    text-align: center;
+    font-weight: bold; /* Makes text bold */
+    font-size: 19px;
+    color: #4D4D4D;
+    margin-left: 20px;
+    font-family: Helvetica;
+    flex-wrap: nowrap;
+    transform: translateY(20px);
+
+}
+.repairmentRow {
+    display: flex;
+    gap: 10px;
+    width: 100%; /* Optional: makes them stretch evenly if needed */
+    margin-left: 20px;
+    transform: translateY(30px);
+  }
+.repairmentForDescription {
+    width: 60%;
+    height: 20px;
+    background-color: white;
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+    font-weight: normal; /* Makes text bold */
+    font-size: 16px;
+    color: #4D4D4D ;
+    padding-top: 5px; 
+    font-family: Helvetica;
+}
+.repairmentSearchButton {
+    width: 23%;
+    height: 25px;
+    background-color: #7B7B7B;
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+    font-weight: normal; /* Makes text bold */
+    font-size: smaller;
+    color: white;
+    padding-top: 3px; 
+    margin-left: 20px;
+    border: none;
+
+}
 
 
+.advertisement-area{
+
+
+}
+
+.advertisement-1{
+    background-color: #D3D3D3;
+    width:460px;
+    height:223px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(870px) translateY(-23px);
+
+}
 

@@ -22,6 +22,8 @@ return (
 
       <div className={styles["popular-search-details"]}>
 
+      
+
         {/*This is the 1st option */}
         <div className={styles["popular-search-1"]}>
           <div className={styles["popular-search-car-name"]}>
@@ -164,6 +166,36 @@ return (
 
       </div>
       
+      {/*Additional Search Feature */}
+
+      <div className={styles.rightSquare}>
+        <div className={styles.selectCarText}>Select Car: </div>
+        <div className={styles.carDetailsRow2}>
+            <div className={styles.selectCarYear}>2009</div>
+            <div className={styles.selectCarMake}>Toyota</div>
+            <div className={styles.selectCarModel}>Camry</div>
+            <div className={styles.selectCarEngineSizeAndTrim}>2.4 LE</div>
+
+        </div>
+        <div className={styles.repairmentsForText}>What repair do you need a quote for? </div>
+        < div className={styles.repairmentRow}>
+            <div className={styles.repairmentForDescription}>AC Filter, Only cold when driving </div>
+            <button className={styles.repairmentSearchButton}>Search</button>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div className={styles["advertisement-area"]}>
+
+    <div className={styles["advertisement-1"]}>
+      Advertisement
+    </div>
+
+    </div>
 
 
       
