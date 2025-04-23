@@ -96,7 +96,7 @@
 .rightSquare {
     background-color: #E5E1EA;
     width: 700px;
-    height: 220px;
+    height: 200px;
 
     /*Adding flexbox */
     display: flex;
@@ -192,12 +192,12 @@
 .advertisement-1{
     background-color: #D3D3D3;
     width:460px;
-    height:223px;
+    height:200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: translateX(870px) translateY(-23px);
+    transform: translateX(870px) translateY(0px);
 
 }
 
