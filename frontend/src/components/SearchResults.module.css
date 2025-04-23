@@ -373,5 +373,15 @@ body {
     color: white;
     text-align: center;
   }
+  .bottomFrame {
+
+    background-color: gray;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 90px;
+    border: 2px solid black; /* Add a black border */
+
+
+  }
   
   

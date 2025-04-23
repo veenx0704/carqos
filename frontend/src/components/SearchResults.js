@@ -1,4 +1,4 @@
-
+/* http://localhost:3000/search-results */
 
 import React from "react";
 import styles from "./SearchResults.module.css";
@@ -121,6 +121,10 @@ const SearchResults = () => {
                     <h1>Map Container</h1>
 
                     </div>
+                </div>
+                <div className={styles.bottomFrame}>
+
+
                 </div>
             </div>
             <p>Search Results Component</p>
