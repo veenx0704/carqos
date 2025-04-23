@@ -30,8 +30,8 @@
     width: 1400px;
     height:150px;
     display: grid;
-    justify-self: end; /*This centered the box to be in the middle on the x-axis, so horizontally*/
-    transform:translateX(50px) translateY(50px);/*This moved the box of the entire popular searches down by 120*/
+    justify-self: start; /*This centered the box to be in the middle on the x-axis, so horizontally*/
+    transform:translateX(130px) translateY(50px);/*This moved the box of the entire popular searches down by 120*/
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap:10px;       /*Adds space between rows and columns*/
@@ -187,10 +187,7 @@
 }
 
 
-.advertisement-area{
 
-
-}
 
 .advertisement-1{
     background-color: #D3D3D3;
