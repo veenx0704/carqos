@@ -26,6 +26,7 @@
 
 .Menu-search-bar{
     background-color: white;
+    position: absolute;
     width: 351px;
     height:41px;
     border-radius: 21px;
@@ -33,14 +34,14 @@
     justify-content: center; /*this is aligning the text in the center horizontally*/
     color:rgb(0,0,0,.5);
     display: flex;
-    transform: translateX(700px);
+    transform: translateX(920px);
 
 
 }
 
 .Account-profile{
     display: flex;
-    transform: translateX(750px);
+    transform: translateX(1050px);
     gap: 20px;
     align-items: center;
 
