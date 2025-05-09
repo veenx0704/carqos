@@ -32,38 +32,35 @@ body {
     background-color: gray;
     width: 100vw;
     height: 70vh;
-    margin-top: 30px;
-    border: 2px solid black; /* Add a black border */
+    margin-top: -px;
 
 }
 .topFrame1 {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center; /* Centers everything vertically */
-    width: 100%;
-    height: 50%;
+    justify-content: flex-left;
+    align-items: flex-start;
     background-color: white;
-    padding: 0px 100px; /* Adds spacing [TOP & BOTTOM] [LEFT & RIGHT]*/
-    gap: 20px; /* Adds a small gap between leftSquare and rightSquare */
+    padding: 10px 90px; /* Adds spacing [TOP & BOTTOM] [LEFT & RIGHT]*/
+    gap: 10px; /* Adds a small gap between leftSquare and rightSquare */
+
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 230px;
 
 }
-
 
 .leftSquare {
-
-    background-color: #E8E8E8; /* Light gray */
-    width: 30%;
-    height: 85%;
-
-    /*Adding flexbox */
+    background-color: #E8E8E8;
+    flex: 1 1 300px;
+    max-width: 35%;
+    min-height: 210px;
+    padding: 10px;
     display: flex;
-    flex-direction: column; /*stacks children up-down*/
-    justify-content: flex-start; /* Start from the top */
-    align-items: flex-start; /* Align to the left */
-    /*padding: 20px; /* Add some breathing room */
-    gap: 10px; /* Space between child elements */
-
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
 }
+
 .vehicleTitle {
     font-weight: bold;
     font-size: xx-large;
@@ -130,20 +127,22 @@ body {
 
 
 .rightSquare {
-    background-color: #E5E1EA;
-    width: 50vw;
-    height: 85%;
 
-    /*Adding flexbox */
+    max-width: 45%;
+    min-height: 210px;
+    background-color: #E5E1EA;
+    flex: 1 1 400px;                 /* Flexible: grow, shrink, min 400px */
+    /*max-width: 50%;*/
+    width: fit-content;
+    padding: 20px;
     display: flex;
-    flex-direction: column; /*stacks children up-down*/
-    justify-content: flex-start; /* Start from the top */
-    align-items: flex-start; /* Align to the left */
-    /*padding: 20px; /* Add some breathing room */
-    gap: 10px; /* Space between child elements */
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
 }
+
 .selectCarText{
-    width: 20%;
+    width: fit-content;
     height: 17px;
     text-align: center;
     font-weight: bold; /* Makes text bold */
@@ -155,11 +154,11 @@ body {
 .carDetailsRow2 {
     display: flex;
     gap: 20px;
-    width: 100%; /* Optional: makes them stretch evenly if needed */
+    width: fit-content;
     margin-left: 20px;
   }
   .selectCarYear, .selectCarMake, .selectCarModel, .selectCarEngineSizeAndTrim {
-    width: 20%;
+    width: fit-content;
     height: 20px;
     background-color: white;
     border-radius: 7px; /* Rounded corners */
@@ -168,11 +167,13 @@ body {
     font-size: smaller;
     color: #4D4D4D;
     padding-top: 5px; 
+    padding-right: 15px;
+    padding-left: 15px;
 
 
 }
 .repairmentsForText {
-    width: 30%;
+    width: fit-content;
     height: 17px;
     text-align: center;
     font-weight: bold; /* Makes text bold */
@@ -184,11 +185,11 @@ body {
 .repairmentRow {
     display: flex;
     gap: 1px;
-    width: 100%; /* Optional: makes them stretch evenly if needed */
+    width: fit-content;
     margin-left: 20px;
   }
 .repairmentForDescription {
-    width: 60%;
+    width: fit-content;
     height: 20px;
     background-color: white;
     border-radius: 15px; /* Rounded corners */
@@ -197,9 +198,11 @@ body {
     font-size: smaller;
     color: #4D4D4D;
     padding-top: 5px; 
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .repairmentSearchButton {
-    width: 23%;
+    width: fit-content;
     height: 25px;
     background-color: #7B7B7B;
     border-radius: 15px; /* Rounded corners */
@@ -230,16 +233,19 @@ body {
 .topFrame2Row {
     display: flex;
     gap: 100px;
-    width: 100%; /* Optional: makes them stretch evenly if needed */
+    width: fit-content;
     margin-left: 5px;
   }
 .problemHeader {
-    width: 10%;
+    width: fit-content;
     height: 30px;
     background-color: #708AB4;
     border-radius: 30px; /* Rounded corners */
     margin-left: 100px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: center;
     font-weight: normal; /* Makes text bold */
     font-size: x-large;
@@ -247,7 +253,7 @@ body {
 }
 
 .addYourQuoteHeader {
-    width: 25%;
+    width: fit-content;
     height: 22px;
     background-color: #9AB7E6;
     margin-top: 23px;
@@ -256,6 +262,8 @@ body {
     font-size: medium;
     color: white;
     padding-top: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .underlined {
     text-decoration: underline;
@@ -264,9 +272,10 @@ body {
 
 .resultInfoFrame {
     background-color: white;
-    width: 100vw;
+    width: auto;
     height: 65%;
     margin-top: -21px;
+    
 
 /*Adding flexbox */
    display: flex;
@@ -275,16 +284,20 @@ body {
    align-items: flex-start; /* Align to the left */
    /*padding: 20px; /* Add some breathing room */
    gap: 10px; /* Space between child elements */
+
 }
 .resultInfoRow {
     display: flex;
     gap: 30px;
-    width: 100%; /* Optional: makes them stretch evenly if needed */
+    width: fit-content;
     margin-left: 100px;
     margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+
 }
 .avgCost {
-    width: 10%;
+    width: fit-content;
     height: 26px;
     background-color: #EDEDED;
     text-align: center;
@@ -292,10 +305,12 @@ body {
     font-size: large;
     color: #7B7B7B;
     padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .avgCostText {
-    width: 10%;
+    width: fit-content;
     height: 50px;
     text-align: left;
     font-weight: light; /* Makes text bold */
@@ -303,9 +318,11 @@ body {
     color: #7B7B7B;
     margin-top: -5px;
     margin-left: -20px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .areaZipcode {
-    width: 10%;
+    width: fit-content;
     height: 50px;
     text-align: left;
     font-weight: light;
@@ -315,14 +332,17 @@ body {
     margin-left: 50px;
 }
 .resultsscrollRow {
+
     display: flex;
-    gap: 50px;
-    width: 100%; /* Optional: makes them stretch evenly if needed */
+    gap: clamp(10px, 5vw, 30px); /* Min 10px, scales with viewport, max 30px */
+    width: fit-content;
     margin-left: 100px;
     margin-top: -30px;
+    
 }
 .prices, .store, .customerRatings {
-    width: 10%;
+
+    width: fit-content;
     height: 25px;
     border-radius: 30px; /* Rounded corners */
     text-align: center;
@@ -330,6 +350,10 @@ body {
     font-size: normal;
     color: white;
     padding-top: 5px; 
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    
 }
 .prices {
     background-color: #9C9DB4;
@@ -339,7 +363,7 @@ body {
     background-color: #AEAEAF;
 }
 .customerRatings {
-    width: 14%;
+    width: fit-content;
 }
 .columnContainer {
     display: flex;              /* Add this to align columns side-by-side */
@@ -349,52 +373,74 @@ body {
     width: 42%;
     margin-top: -5px;
     margin-left: 100px;
-    gap: 35px;                  /* Optional: spacing between columns */
+    gap: clamp(10px, 5vw, 30px); /* Min 10px, scales with viewport, max 30px */
     padding: 10px;              /* Optional: padding inside container */
   }
   
-  .column {
+  .column{
     display: flex;
     flex-direction: column;
     gap: 10px;                   /* Space between rows inside column */
-    width: 100px;             /* Adjust if needed */
     text-align: center;
     width: 100%; /* Optional: makes them stretch evenly if needed */
     margin-left: -50px;
   }
-  .mapContainer {
-    position: relative;
-    top: -70%;          /* Adjust vertical placement */
-    left: 55%;         /* Controls horizontal placement */
+  .rightSquareForMap {
+    background-color: black;
+    width: 100vw;
+    height: 85%;
 
-    width: 30%;
-    aspect-ratio: 4 / 3;  /* Keeps it proportional */
-    background-color: #E8E8E8;
-    border-radius: 30px;
-
+    /*Adding flexbox */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    color: white;
+    justify-content: flex-start; /* Start from the top */
+    align-items: flex-start; /* Align to the left */
+    /*padding: 20px; /* Add some breathing room */
+    gap: 10px; /* Space between child elements */
 }
+
   .bottomFrame {
 
     background-color: white;
     width: 100vw;
     height: 70vh;
-    margin-top: 90px;
+    margin-top: 30px;
+
+       /*Adding flexbox */
+       display: flex;
+       flex-direction: column; /*stacks children up-down*/
+       justify-content: flex-start; /* Start from the top */
+       align-items: flex-start; /* Align to the left */
+       /*padding: 20px; /* Add some breathing room */
+       gap: 10px; /* Space between child elements */
     
   }
-
   .commentsContainer{
     background-color: #EDEDED;
-    width: 82vw;
-    height: 30vh;
-    margin-top: 0px;
+    width: 82.2vw;
+    height: 100%;
+    margin-top: 70px;
     margin-left: 100px;
+    
   }
+  .commentsContainerHeader{
+    background-color: #E5E1EA;
+    width: 82vw;
+    height: 10vh;
+    margin-top: 0px;
+    margin-left: 0px;
+    border: 1px solid #70707046;
+    text-align: center;
+    font-weight: light; /* Makes text bold */
+    font-size: small;
+    color: #7B7B7B;
+}
+.commentsContainer2{
 
+    width: 82vw;
+    height: 20vh;
+    margin-top: 5px;   /* Small gap */
+    border: 1px solid #70707046;
+ 
+}
 
-  
   

@@ -1,13 +1,18 @@
 /* http://localhost:3000/search-results */
 
 import React from "react";
+import TopMenu from "./TopMenu";
 import styles from "./SearchResults.module.css";
 
 const SearchResults = () => {
     return (
         <div className={styles.resultsContainer}>
+
             <div className={styles.mainFrame}>
-            <h4>main Frame</h4>
+                <div className={styles.menu}>
+                    <TopMenu/>
+                </div>
+            
                 <div className={styles.topMainFrame}> 
                     <div className={styles.topFrame1}>
                         <div className={styles.leftSquare}>
@@ -117,19 +122,30 @@ const SearchResults = () => {
 
                         </div>
                     </div>
-                    < div className={styles.mapContainer}>
-                        <h1>Map Container</h1>
+                    
+                    < div className={styles.rightSquareForMap}>
+                        < div className={styles.mapContainer}>
+                            <h1>Map Container</h1>
+
+                        </div>
 
                     </div>
+
                 </div>
                 <div className={styles.bottomFrame}>
                     <div className={styles.commentsContainer}>
-
                         
+                        <div className={styles.commentsContainerHeader}>
+                        <h1>Comments</h1>
+                        </div>
+
+                        <div className={styles.commentsContainer2}>
+                        {/* Comments content goes here */}
+                        </div>
+
+                    </div>
                     </div>
 
-
-                </div>
             </div>
             <p>Search Results Component</p>
         </div>
